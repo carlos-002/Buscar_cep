@@ -1,0 +1,103 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(#121212, #3c5598);
+}
+.title{
+   font-size: 85px;
+    color: aliceblue;
+    animation: flyptitle 2s;
+}
+
+@keyframes flyptitle {
+    from{
+      transform: rotateX(90deg);
+    }to{
+      transform: matrix(0deg);
+    }
+}
+
+.container-input{
+    background-color: rgba(255, 255, 255, 0.2); /* Cor mais consistente */
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 310px;
+    box-sizing: border-box;
+}
+.container-input input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    margin-right: 8px;
+}
+.container-input input::placeholder{
+    color: #f1f1f1;
+}
+.buttonsearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.buttonsearch:hover{
+    transform: scale(1.2);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 8px;
+}
+.main h2{
+ margin: 16px 0;
+font-size: 39px;
+}
+
+.main span{
+    margin-bottom: 16px;
+    font-weight:bold ;
+}
+.error-message {
+    color: #000000; 
+    background-color: #ffffff; 
+    border: 1px solid; 
+    padding: 10px; 
+    border-radius: 15px; 
+    margin: 10px 0;
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+
+@media(max-width: 770px){
+.title{
+    font-size:50px;
+}
+.main h2{
+    font-size: 27;
+}
+.main{
+    width: 80%;
+    min-height: 250px;
+}
+.error-message {
+    font-size: 14px; /* Fonte um pouco menor em telas pequenas */
+    padding: 8px;
+  }
+}
