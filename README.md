@@ -13,7 +13,7 @@ Este sistema tem como objetivo buscar informações detalhadas de endereço, com
     ```
 
 ## Execução
-1. Certifique-se de que todas as dependências estão instaladas e que o Supabase e o provedor estão configurados corretamente.
+1. Certifique-se de que todas as dependências estão instaladas.
 2. Inicie o servidor:
     ```bash
     npm run start
